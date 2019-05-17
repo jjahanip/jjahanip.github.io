@@ -82,8 +82,7 @@
 
 							<h2 class="ui center aligned header">Research</h2>
 							<p style="text-align:justify">
-								Biologist are continuously looking for automatic methods to reduce the human effort on 
-								tasks with large dataset. These methods should be fast and accurate simultaneously. 
+								Biologist are continuously looking for automatic methods to reduce the human effort on tasks with large dataset. These methods should be fast and accurate simultaneously. 
 
 							</p>
 							<p style="text-align:justify">
@@ -289,7 +288,7 @@
 						We have held several workshops in collaboration with <a href="https://www.uh.edu/cacds/education/workshops/">CACDS</a> and <a href="https://www.math.uh.edu/local/seminar-and-events/deep-learning/deep-learning_lectures.pdf">UH Math</a>.
 						<br> <br>
 						This project has been GitHub trending repository of the month and currently has more than 2.5K followers on GitHub.
-						<br>
+						<br> <br>
 						Joint work with <a href="https://amobiny.github.io/">Aryan Mobiny</a> and <a href="http://www2.egr.uh.edu/~mnajaria/index.html">Mohammad Najarian</a>.
 					</p>
 				</div>
@@ -316,16 +315,43 @@
 				<div class="description">
 					<p style="text-align:justify">
 						<br>
-						In this study a deep clustering pipeline is implemented for biomedical data discovery. For this purpose, a scattering network (ScatNet) is used to extract the deep translation invariant features of each cell. These deep features are used in a hierarchical clustering algorithm to find similar groups of cells. We have designed a Graphical User Interface (GUI) to visualize the clusters on top of the images to give the biologists the ability to do further analysis. This method identifies unknown cellular alterations among the cells.
+						Studying the cell population in niche level is a necessary task to understand the relationship between cells in a tissue.
+						<br> <br>
+						In this study a deep clustering pipeline is implemented for biomedical data discovery. For this purpose, a scattering network is used to extract the deep translation invariant features of each cell. These deep features are used in a hierarchical clustering algorithm to find similar groups of cells. We have designed a Graphical User Interface (GUI) to visualize the clusters on top of the images to give the biologists the ability to do further analysis. This method identifies unknown cellular alterations among the cells.
 					</p>
 				</div>
 			</div>
 			<div class="extra content">
 				<a class="tiny ui left floated button" href="./PDFs/deep_hierarchical_profiling.pdf">
-					</i> PDF
+					</i> Poster
 				</a>
 			</div>
 		</div>
+		
+		<div class="ui card">
+			<div class="content">
+				<div class="header">Fluorescence Signal Correction</div>
+				<div class="meta"></div>
+				<div class="label">
+					<br>
+					<img class="ui image" src="./Resources/intra_correction.png" style="float: left; height: 100px; ">
+				</div>
+
+				<div class="description">
+					<p style="text-align:justify">
+						<br>
+						The main purpose of fuorescence microscopy is to reveal the object of interest and black background otherwise. But due to the existence of auto-fuorescence in many organic substances, the desired black background is not achieved in the image.
+						<br> <br>
+						In this project an intra-channel signal correction algorithm is implemented to leverege morphology related features in order to estimate and extract non-specific signals such as auto-fluorescence, photo-bleaching, non-uniform illumination and  tissue folds.
+					</p>
+				</div>
+			</div>
+			<div class="extra content">
+				<a class="tiny ui left floated button" href="https://github.com/jjahanip/illumination_correction">
+					</i> Code
+				</a>
+			</div>
+		</div>		
 
 		<div class="ui card">
 			<div class="content">
@@ -339,11 +365,9 @@
 				<div class="description">
 					<p style="text-align:justify">
 						<br>
-						In this project a two step linear sparse unmixing algorithm is implemented.
+						Increment in the number of excitation emission causes bleaching and phototoxicity resulting in weakening the fuorescent signal. Moreover, the overlap of the emission spectra results in spectral bleed-through or molecular co-localization of channels.
 						<br> <br>
-						In the first step, an unsupervised sparse unmixing is implemented for bleedthrough correction which inferes the non-specific channels (endmembers) and the abundance of the endmembers from the source channel.
-						<br> <br>
-						In the second step, user can correct the abundance matrix in a semi-supervised manner for chemical co-localization correction of signals.
+						In this project a two step linear sparse unmixing algorithm is implemented.	First, an unsupervised sparse unmixing is implemented for bleedthrough correction which inferes the non-specific channels (endmembers) and the abundance of the endmembers from the source channel. Second, user can correct the abundance matrix in a semi-supervised manner for chemical co-localization correction of signals.
 					</p>
 				</div>
 			</div>
@@ -354,6 +378,58 @@
 			</div>
 		</div>
 
+		<div class="ui card">
+			<div class="content">
+				<div class="header">Deep Cell Nuclei Detection</div>
+				<div class="meta"></div>
+				<div class="label">
+					<br>
+					<img class="ui image" src="./Resources/cell_detection.png" style="float: left; height: 100px; ">
+				</div>
+
+				<div class="description">
+					<p style="text-align:justify">
+						<br>
+						Accurate counting and detecting the cells in an image dataset is the first and the most important step in any quantitative analysis pipeline.
+						<br> <br>
+						In this project a semi-supervised deep transfer learning method is implemented to learn the rules of existing segmentation methods and improve the performance by learning from a small set of corrected labels. By this means, we reduced the labeling effort of generate thousands of training samples for deep learning networks drastically.
+						<br> <br>
+						Joint work with <a href="https://github.com/Xiaoyang-Rebecca">Xiaoyang Li</a>.
+					</p>
+				</div>
+			</div>
+			<div class="extra content">
+				<a class="tiny ui left floated button" href="./PDFs/cell_detection.pdf">
+					</i> Poster
+				</a>
+			</div>
+		</div>		
+
+		<div class="ui card">
+			<div class="content">
+				<div class="header">RNA Seq of Human Cell Atlas</div>
+				<div class="meta"></div>
+				<div class="label">
+					<br>
+					<img class="ui image" src="./Resources/RNA_Seq.png" style="float: left; height: 100px; ">
+				</div>
+
+				<div class="description">
+					<p style="text-align:justify">
+						<br>
+						<a href="https://preview.data.humancellatlas.org//">Human Cell Atlas</a> (HCA) is the first single-cell sequencing dataset now available to the research community. Profiling of immunocytes by single cell RNA-seq helps us to understand human health and disease.
+						<br> <br>
+						In this project, a non-paramteric clustering method is designed with an interactive GUI to explore and visualize the cells in high dimension. Furthermore, the sum of expressed genes in each cluster is presented as a heatmap table to further investigate the relationship of different genes.
+					</p>
+				</div>
+			</div>
+			<div class="extra content">
+				<a class="tiny ui left floated button" href="https://github.com/jjahanip/RNA_seq">
+					</i> Code
+				</a>
+			</div>
+		</div>	
+
 
 	</div>
 
@@ -361,7 +437,7 @@
 
 	<div class="ui stripe very padded vertical segment">
 
-		Last updated November 21, 2018.
+		Last updated May 17, 2019.
 
 	</div>
 
